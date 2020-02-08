@@ -38,10 +38,10 @@ client.on("message", message => {
 
 client.on('message', message => {
     if(!message.channel.guild) return;
-let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('kibc')){
+let args = message.content.split('').slice(1).join('');
+if (message.content.startsWith('nbc')){
 if(!message.author.id === '537675177677291530') return;
-message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
+message.channel.sendMessage('**جار ارسال الرسالة** |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
 })
